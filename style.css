@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    width: 400px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.search-box button {
+    width: 46px;
+    height: 46px;
+    background: #e6f5fb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Weather Body */
+.weather-body {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Resized Weather Image */
+.weather-img {
+    width: 120px;  /* Adjusted size */
+    height: auto;
+}
+
+/* Weather Box */
+.weather-box {
+    margin: 20px 0;
+}
+
+.weather-box .temperature {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* Weather Details */
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Humidity & Wind Section */
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+}
+
+/* Resized Font Awesome Icons */
+.weather-details i {
+    font-size: 28px;  /* Smaller size */
+    margin-right: 8px;
+    color: #555; /* Slightly softer color */
+}
+
+/* Resize Humidity & Wind Images */
+.humidity img, .wind img {
+    width: 28px; /* Same as Font Awesome icons */
+    height: 28px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Hide error initially */
+.location-not-found {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
